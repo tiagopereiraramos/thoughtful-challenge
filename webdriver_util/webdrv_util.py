@@ -178,7 +178,7 @@ def get_driver(site_url: str, headless: bool = False) -> Selenium | None:
         browser.open_browser(url="about:blank", browser="chrome", options=options)
         browser.maximize_browser_window()
         browser.set_selenium_page_load_timeout(60)
-        browser.set_browser_implicit_wait(10)
+        browser.set_browser_implicit_wait(3)
         logger.info(f"Accessing the site: {site_url}")
         browser.go_to(url=site_url)
         browser.delete_all_cookies()
