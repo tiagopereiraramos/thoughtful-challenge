@@ -379,7 +379,7 @@ class ExcelOtherMethods:
                 logger.info(f"Downloading image: {url}")
                 http.download(
                     url=url,
-                    target_file=f"output/{full_path}",
+                    target_file=f"{full_path}",
                     overwrite=True,
                 )
                 return full_path
